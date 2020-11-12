@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YoYo</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="anuncios.html">Juguetes</a>
+                    <a href="pedidos.html">Pedidos</a>
+                    <a href="entrada.html">Eventos</a>
+                    <a href="contacto.html">Comentarios</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Pedidos</h1>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">¡Haz tu Compra Aqui!</h2>
+
+        <div class="pedido">
+        <form action="conexion.php" method="POST">
+           
+           <fieldset>
+            <legend>Información</legend>
+                <label for="nombre">Nombre de Comprador:</label>
+                <input type="text" name="nombre" placeholder="Tu Nombre" required>
+
+           <legend>Juegos</legend>
+            <select name="juego">
+                <option value="apilador-arcoiris">Apilador Arcoíris</option>
+                <option value="abaco-arcoiris">Ábaco Arcoíris</option>
+                <option value="apilador-piramidal">Apilador Piramidal</option>
+                <option value="arco-cascada">Arco Cascada</option>
+                <option value="naturaleza">Naturaleza</option>
+                <option value="rompecabezas">Rompecabezas de Naturaleza</option>
+            </select>
+            <legend>Cantidad</legend>
+            <label for="max">Max. 3 por compra</label>
+            <select name="cantidad">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <label for="email">E-mail: </label>
+                <input type="email" name="email" placeholder="Tu Correo electrónico" required>
+             
+             <legend>Estado</legend>
+            <select name="estado">
+                <option value="Aguascalientes">Aguascalientes</option>
+                <option value="Baja California">Baja California</option>
+                <option value="Baja California Sur">Baja California Sur</option>
+                <option value="arco-cascada">Campeche</option>
+                <option value="naturaleza">Coahuila</option>
+                <option value="rompecabezas">Colima</option>
+                <option value="arco-cascada">Chiapas</option>
+                <option value="naturaleza">Chihuahua</option>
+                <option value="rompecabezas">Durango</option>
+                <option value="arco-cascada">Distrito Federal</option>
+                <option value="naturaleza">Guanajuato</option>
+                <option value="rompecabezas">Guerrero</option>
+                <option value="arco-cascada">Hidalgo</option>
+                <option value="naturaleza">Jalisco</option>
+                <option value="rompecabezas">México</option>
+                <option value="arco-cascada">Michoacán</option>
+                <option value="naturaleza">Morelos</option>
+                <option value="rompecabezas">Nayarit</option>
+                <option value="arco-cascada">Nuevo León</option>
+                <option value="naturaleza">Oaxaca</option>
+                <option value="rompecabezas">Puebla</option>
+                <option value="arco-cascada">Querétaro</option>
+                <option value="naturaleza">Quintana Roo</option>
+                <option value="rompecabezas">San Luis Potosí</option>
+                <option value="arco-cascada">Sinaloa</option>
+                <option value="naturaleza">Sonora</option>
+                <option value="rompecabezas">Tabasco</option>
+                <option value="arco-cascada">Tamaulipas</option>
+                <option value="naturaleza">Tlaxcala</option>
+                <option value="rompecabezas">Veracruz</option>
+                <option value="arco-cascada">Yucatán</option>
+                <option value="naturaleza">Zacatecas</option>
+            </select>
+
+            <legend>Dirección</legend>
+                <input type="text" name="direccion" placeholder="Dirección" required>
+            </fieldset> 
+
+            <input type="submit" value="enviar">
+        </div>
+        </form>
+        </div>
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="anuncios.html">Juguetes</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="entrada.html">Eventos</a>
+                <a href="contacto.html">Comentarios</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2020 &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>YoYo</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="mobile-menu">
+                    <a href="#navegacion">
+                        <img src="img/barras.svg" alt="Icono Menu">
+                    </a>
+                </div>
+
+                <nav id="navegacion" class="navegacion">
+                    <a href="anuncios.html">Juegos</a>
+                    <a href="pedidos.html">Pedidos</a>
+                    <a href="entrada.html">Eventos</a>
+                    <a href="contacto.html">Comentarios</a>
+                </nav>
+            </div>
+        </div> <!-- contenedor -->
+    </header>
+
+    <h1 class="fw-300 centrar-texto">Comentarios</h1>
+
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de Comentarios</h2>
+
+        <fieldset>
+            <legend>Información</legend>
+        <div class="form">
+        <form action="prueba.php" method="POST">
+            <label for="nombre">Su Nombre</label>
+           
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <label for="email">Dirección de Correo</label>
+            
+            <input type="email" name="email" placeholder="alguien@algo.com">
+            <label for="mensaje">Su Mensaje</label>
+            
+            <textarea name="mensaje" placeholder="Mensaje" required=""></textarea>
+            <br>
+            <br>
+            
+        </form>
+        <input type="submit" value="enviar">
+    </div>
+    </fieldset>
+    
+    </main>
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="anuncios.html">Juegos</a>
+                <a href="pedidos.html">Pedidos</a>
+                <a href="entrada.html">Eventos</a>
+                <a href="contacto.html">Comentarios</a>
+            </nav>
+            <p class="copyright">Todos los Derechos Reservados 2020 &copy; </p>
+        </div>
+    </footer>
+</body>
+</html>
